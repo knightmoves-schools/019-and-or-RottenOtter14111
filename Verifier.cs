@@ -6,7 +6,8 @@ namespace knightmoves {
         public bool canFly = false;
         public bool canSwim = false;
 
-        public string Taxable(bool taxExempt) {
+
+        public string Taxable(string state, bool taxExempt) {
             if(state == "IA" && !taxExempt){
                 return "is taxable";
             }
@@ -20,7 +21,8 @@ namespace knightmoves {
             return "";
         }
 
-        public string isVehicle(bool hasWheels, bool canFly, bool canSwim) {
+      
+        public string IsVehicle(bool hasWheels, bool canFly, bool canSwim) {
             if(hasWheels || canFly || canSwim){
                 return "is vehicle";
             }
